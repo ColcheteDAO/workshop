@@ -53,12 +53,16 @@ flowchart TD
     n1 --> n2["UTXO#1 25k SATS"] & n3@{ label: "<span style=\"padding-left:\">UTXO#2 35k SATS</span>" } & n4@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">UTXO#3 50k SATS</span></span>" } & n8["UTXO#4 de troco"]
     n2 --> n5["Enviar 60k SATS"]
     n3 --> n5
-    n5 -- 50k SATS --> n10
+    n5 -- 50k SATS --> n10["UTXO #1"]
     n5 -- 10k SATS --> n8
-    n9 --> n10["UTXO #1"]
+    n9 --> n10
+    n6@{ shape: rounded}
     n3@{ shape: rect}
     n4@{ shape: rect}
-    n6@{ shape: rounded}
+    style n2 stroke:#00C853
+    style n3 stroke:#00C853
+    style n8 stroke:#D50000
+    style n10 stroke:#D50000
 ```
 ## Transação
 ```mermaid
