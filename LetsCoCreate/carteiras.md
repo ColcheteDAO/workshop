@@ -94,3 +94,31 @@ flowchart TD
     n20@{ shape: rect}
     n21@{ shape: rect}
 ```
+## PassPhrase
+```mermaid
+flowchart TD
+    n17@{ label: "<strong>m/44'/60'/0'/4</strong>" } -- "<span style=padding-left:><span style=padding-left:>Passphrase: thekey</span></span>" --> B@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #5</span></span></span></span>" }
+    A(["SeedPhrase"]) -- <br> --> n1@{ label: "<span style=\"padding-left:\"><strong>m/44'/60'/0'/0</strong></span>" } & n2@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><strong>m/44'/60'/0'/1</strong></span></span>" } & n15@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><strong>m/44'/60'/0'/2</strong></span></span></span>" } & n16@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><strong>m/44'/60'/0'/3</strong></span></span></span></span>" }
+    A --> n17
+    n1 -- Passphrase: hi --> n18@{ label: "<span style=\"padding-left:\">Chave Pública #1</span>" }
+    n1 -- "<span style=padding-left:>Passphrase: qzomes</span>" --> n22@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #1.1</span></span>" }
+    n2 -- "<span style=padding-left:><span style=padding-left:>Passphrase: hi</span></span>" --> n19@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #2</span></span>" }
+    n15 -- "<span style=padding-left:><span style=padding-left:>Passphrase: hello</span></span>" --> n20@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3</span></span></span>" }
+    n16 -- "<span style=padding-left:><span style=padding-left:>Passphrase: simple</span></span>" --> n21@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #4</span></span></span></span>" }
+    n15 -- "<span style=padding-left:><span style=padding-left:><span style=padding-left:>Passphrase: cherry</span></span></span>" --> n23@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3.1</span></span></span></span>" }
+    n15 -- "<span style=padding-left:><span style=padding-left:><span style=padding-left:><span style=padding-left:>Passphrase: ladychocolady</span></span></span></span>" --> n24@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3.2</span></span></span></span></span>" }
+
+    n17@{ shape: rect}
+    B@{ shape: rect}
+    n1@{ shape: rect}
+    n2@{ shape: rect}
+    n15@{ shape: rect}
+    n16@{ shape: rect}
+    n18@{ shape: rect}
+    n22@{ shape: rect}
+    n19@{ shape: rect}
+    n20@{ shape: rect}
+    n21@{ shape: rect}
+    n23@{ shape: rect}
+    n24@{ shape: rect}
+```
