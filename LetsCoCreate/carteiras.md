@@ -72,3 +72,25 @@ flowchart TD
     n2 -- Minera --> n3(["Alice"])
     n1@{ shape: rect}
 ```
+## SeedPhrase
+```mermaid
+flowchart TD
+    n17@{ label: "<strong>m/44'/60'/0'/4</strong>" } --> B@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #5</span></span></span></span>" }
+    A(["SeedPhrase"]) -- <br> --> n1@{ label: "<span style=\"padding-left:\"><strong>m/44'/60'/0'/0</strong></span>" } & n2@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><strong>m/44'/60'/0'/1</strong></span></span>" } & n15@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><strong>m/44'/60'/0'/2</strong></span></span></span>" } & n16@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><strong>m/44'/60'/0'/3</strong></span></span></span></span>" }
+    A --> n17
+    n1 --> n18@{ label: "<span style=\"padding-left:\">Chave Pública #1</span>" }
+    n2 --> n19@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #2</span></span>" }
+    n15 --> n20@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3</span></span></span>" }
+    n16 --> n21@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #4</span></span></span></span>" }
+
+    n17@{ shape: rect}
+    B@{ shape: rect}
+    n1@{ shape: rect}
+    n2@{ shape: rect}
+    n15@{ shape: rect}
+    n16@{ shape: rect}
+    n18@{ shape: rect}
+    n19@{ shape: rect}
+    n20@{ shape: rect}
+    n21@{ shape: rect}
+```
