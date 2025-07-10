@@ -52,11 +52,13 @@ flowchart TD
 ```mermaid
 flowchart TD
     A(["Bob"]) --> n1["Endereço #1"]
+    n6["Alice"] --> n9["Endereço #1"]
     n1 --> n2["UTXO#1 25k SATS"] & n3@{ label: "<span style=\"padding-left:\">UTXO#2 35k SATS</span>" } & n4@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">UTXO#3 50k SATS</span></span>" } & n8["UTXO#4 de troco"]
     n2 --> n5["Enviar 60k SATS"]
     n3 --> n5
-    n5 -- 50k SATS --> n6["Alice"]
+    n5 -- 50k SATS --> n10
     n5 -- 10k SATS --> n8
+    n9 --> n10["UTXO #1"]
     n3@{ shape: rect}
     n4@{ shape: rect}
     n6@{ shape: rounded}
