@@ -5,3 +5,10 @@ flowchart TD
     n1@{ shape: rect}
     n2@{ shape: rect}
 ```
+```mermaid
+flowchart TD
+    A(["BOB"]) -- Assina com a chave privada --> n1["Transação"]
+    n1 -- Transmitida --> n2["Blockchain"]
+    n2 -- Minera --> n3(["Alice"])
+    n1@{ shape: rect}
+```
