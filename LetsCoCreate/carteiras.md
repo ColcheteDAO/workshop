@@ -45,6 +45,7 @@ flowchart TD
     n13@{ shape: rect}
     n14@{ shape: rect}
 ```
+## Input / Output
 ```mermaid
 flowchart TD
     A(["Bob"]) --> n1["Endereço #1"]
