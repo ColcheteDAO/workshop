@@ -22,6 +22,7 @@ flowchart TD
     n7@{ shape: rect}
     n8@{ shape: rect}
 ```
+## UTXO
 ```mermaid
 flowchart TD
     A(["Chave Privada"]) --> B["Chave Pública #1"] & n1@{ label: "<span style=\"padding-left:\">Chave Pública #2</span>" } & n2@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3</span></span>" }
