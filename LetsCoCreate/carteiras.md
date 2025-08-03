@@ -11,8 +11,8 @@ flowchart TD
 flowchart TD
     A(["Chave Privada"]) --> B["Chave Pública #1"] & n1@{ label: "<span style=\"padding-left:\">Chave Pública #2</span>" } & n2@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3</span></span>" }
     B --> n3["endereço"]
-    n1 --> n4@{ label: "<span style=\"padding-left:\">endereço #1</span>" }
-    n2 --> n5@{ label: "<span style=\"padding-left:\">endereço #1</span>" }
+    n1 --> n4["endereço"]
+    n2 --> n5["endereço"]
     B@{ shape: rect}
     n1@{ shape: rect}
     n2@{ shape: rect}
