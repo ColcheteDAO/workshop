@@ -98,11 +98,11 @@ flowchart TD
     A --> n17
     n1 --> n18@{ label: "<span style=\"padding-left:\">Chave Pública #1</span>" }
     n1 --> n22@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #1.1</span></span>" }
-    n2 -- "<span style=padding-left:><span style=padding-left:>Passphrase: hi</span></span>" --> n19@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #2</span></span>" }
-    n15 -- "<span style=padding-left:><span style=padding-left:>Passphrase: hello</span></span>" --> n20@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3</span></span></span>" }
-    n16 -- "<span style=padding-left:><span style=padding-left:>Passphrase: simple</span></span>" --> n21@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #4</span></span></span></span>" }
-    n15 -- "<span style=padding-left:><span style=padding-left:><span style=padding-left:>Passphrase: cherry</span></span></span>" --> n23@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3.1</span></span></span></span>" }
-    n15 -- "<span style=padding-left:><span style=padding-left:><span style=padding-left:><span style=padding-left:>Passphrase: ladychocolady</span></span></span></span>" --> n24@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3.2</span></span></span></span></span>" }
+    n2 --> n19@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #2</span></span>" }
+    n15 --> n20@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3</span></span></span>" }
+    n16 --> n21@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #4</span></span></span></span>" }
+    n15 --> n23@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3.1</span></span></span></span>" }
+    n15 --> n24@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">Chave Pública #3.2</span></span></span></span></span>" }
 
     n17@{ shape: rect}
     B@{ shape: rect}
